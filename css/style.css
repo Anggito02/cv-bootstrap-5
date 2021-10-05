@@ -115,7 +115,7 @@
     background-color: #2E4975;
 }
 
-.edu-mid-line {
+.edu-exp-mid-line {
     color: transparent;
     background-color: #5C010B;
 }
@@ -165,4 +165,9 @@
 
     transform: translate(31.5px, 8px);
     background-color: #5C010B;
+}
+
+.exp-footer {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.18rem;
 }
