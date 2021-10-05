@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Curriculum Vitae</title>
 </head>
@@ -13,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container py-2">
             <div class="collapse navbar-collapse fw-bold fs-5" id="navmenu">
-                <ul class="navbar-nav d-flex justify-content-evenly align-items-center" style="width: 100%;">
+                <ul class="navbar-nav d-flex justify-content-between text-center" style="width: 100%;">
                     <li class="nav-item ">
                         <a href="#aboutme" class="nav-link">About Me</a>
                     </li>
@@ -49,6 +52,56 @@
             </div>
         </section>
     </div>
+
+    <!-- About Me Section -->
+    <section class="about-me-wrapper">
+        <div class="position-relative">
+            <div class="position-absolute top-0 start-50 translate-middle">
+                <div class="profile-pict-wrapper rounded-circle d-flex justify-content-center align-items-center" id="aboutme">
+                    <img src="img/Pas Foto.png" alt="pas foto" class="img-fluid rounded-circle profile-pict">
+                </div>
+            </div>
+        </div>
+        <div class="container d-lg-flex justify-content-center gap-5">
+            <div class="container">
+                <div class="justify-content-center justify-content-lg-start w-100 d-flex flew-column">
+                    <h1 class="about-me-title d-flex flex-column">ABOUT ME</h1>
+                </div>
+                <div class="text-center text-lg-end w-100">
+                    <h4 class="mt-5 fw-light lh-base">
+                        A teenager from Surabaya with a great interest in Software Engineering. 
+                        I am currently pursuing my bachelor’s degree in Department of Informatics 
+                        Engineering Institut Teknologi Sepuluh Nopember
+                    </h4>
+                </div>
+            </div>
+            <div class="container d-flex flex-column mt-5 mt-lg-0">
+                <div class="row d-flex justify-content-center justify-content-lg-start">
+                    <div class="col-3 d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/anggitoanjuhartawanmanalu" target="_blank" rel="noopener noreferrer">
+                            <h1 class="socmed-icon"><i class="bi bi-linkedin"></i></h1>
+                        </a>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <a href="https://www.instagram.com/anggitoanju" target="_blank" rel="noopener noreferrer">
+                            <h1 class="socmed-icon"><i class="bi bi-instagram"></i></h1>
+                        </a>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <a href="https://www.facebook.com/profile.php?id=100008957016241" target="_blank" rel="noopener noreferrer">
+                            <h1 class="socmed-icon"><i class="bi bi-facebook"></i></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-center justify-content-lg-start">
+                        <button class="download-button btn-lg">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
