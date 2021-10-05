@@ -32,10 +32,6 @@
 }
 
 /* Custom CSS */
-body {
-    height: 2000px;
-}
-
 .hero {
     color: #BBC8DD;
 
@@ -83,15 +79,6 @@ body {
     letter-spacing: 0.45rem;
 }
 
-/* .about-me-title::after {
-    content: "";
-    width: 97%;
-    height: 8px;
-    margin-top: 12px;
-
-    background-color: #DF3143;
-} */
-
 .socmed-icon {
     color: #030824;
     transition-duration: 0.4s;
@@ -126,6 +113,11 @@ body {
 
 .education-wrapper {
     background-color: #2E4975;
+}
+
+.edu-mid-line {
+    color: transparent;
+    background-color: #5C010B;
 }
 
 .edu-exp-wrapper {
@@ -163,4 +155,14 @@ body {
     font-family: 'PT Sans', sans-serif;
 
     letter-spacing: 0.18rem;
+}
+
+.edu-year::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    transform: translate(31.5px, 8px);
+    background-color: #5C010B;
 }
