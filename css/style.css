@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap');
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    nav {
+        background-color: #BBC8DD;
+    }
+}
+
+body {
+    height: 2000px;
+}
+
+.hero {
+    color: #BBC8DD;
+
+    padding: 180px 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    background-image: url("/img/header.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.hero-name {
+    font-size: 48px;
+}
