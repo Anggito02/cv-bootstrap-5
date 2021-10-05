@@ -25,9 +25,6 @@ window.addEventListener('scroll', function(event) {
 
     const title = this.document.querySelector("#head-par");
     let yScroll = this.window.scrollY;
-    let xWidth = this.window.innerWidth;
 
-    if(xWidth > 992) {
-        title.style.transform = "translateY("+ yScroll/6 +"%)"
-    }
+    title.style.transform = "translateY("+ yScroll/6 +"%)"
 });

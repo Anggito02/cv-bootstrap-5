@@ -8,17 +8,26 @@
     }
 }
 
-/* ABOUT ME SECTIONS PADDING */
-@media screen and (max-width: 992px) {
-    .about-me-wrapper {
-        padding-top: 800px;
+/* ABOUT ME TITLE AFTER */
+@media screen and (min-width: 992px) {
+    .about-me-title::after {
+        content: "";
+        width: 30%;
+        height: 8px;
+        margin-top: 12px;
+
+        background-color: #DF3143;
     }
 }
 
-/* ABOUT ME TITLE AFTER */
 @media screen and (max-width: 992px) {
     .about-me-title::after {
-        content: none;
+        content: "";
+        width: 97%;
+        height: 8px;
+        margin-top: 12px;
+
+        background-color: #DF3143;
     }
 }
 
@@ -57,12 +66,14 @@ body {
 }
 
 .about-me-wrapper {
-    padding-top: 78px;
-
     background-color: #F0F8FF;
     color: #030824;
 
     font-family: 'Montserrat', sans-serif;
+}
+
+.about-me-content {
+    padding-top: 150px;
 }
 
 .about-me-title {
@@ -72,26 +83,23 @@ body {
     letter-spacing: 0.45rem;
 }
 
-.about-me-title::after {
+/* .about-me-title::after {
     content: "";
-    width: 30%;
+    width: 97%;
     height: 8px;
-    margin-left: 11px;
     margin-top: 12px;
 
     background-color: #DF3143;
-}
+} */
 
 .socmed-icon {
     color: #030824;
-
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
 }
 
 .socmed-icon:hover {
-    transform: scale(1.5s);
-
-    transition-duration: 0.5s;
+    transform: scale(1.2);
+    transition-duration: 0.4s;
 }
 
 .download-button {
@@ -114,4 +122,45 @@ body {
 .download-button:hover {
     color: #030824;
     box-shadow: inset 240px 0 0 0 #BBC8DD;
+}
+
+.education-wrapper {
+    background-color: #2E4975;
+}
+
+.edu-exp-wrapper {
+    color: #F0F8FF;
+
+    background-color: #2E4975;
+}
+
+.edu-exp-title {
+    color: #BBC8DD;
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.18em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.edu-exp-title::before,
+.edu-exp-title::after {
+    content: "";
+    width: 68px;
+    height: 8px;
+
+    background-color: #5C010B;
+}
+
+.edu-exp-title::before {
+    margin-right: 22px;
+}
+
+.edu-exp-title::after {
+    margin-left: 12px;
+}
+
+.edu-exp-content {
+    font-family: 'PT Sans', sans-serif;
+
+    letter-spacing: 0.18rem;
 }
