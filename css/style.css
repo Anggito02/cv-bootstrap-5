@@ -8,11 +8,14 @@
     }
 }
 
+/* Media Queries */
 /* ABOUT ME TITLE AFTER */
+/* ACHIEVEMENT AFTER */
 @media screen and (min-width: 992px) {
-    .about-me-title::after {
+    .about-me-title::after,
+    .ach-head-wrap::after {
         content: "";
-        width: 30%;
+        width: 8%;
         height: 8px;
         margin-top: 12px;
 
@@ -20,8 +23,10 @@
     }
 }
 
+/* Media Queries */
 @media screen and (max-width: 992px) {
-    .about-me-title::after {
+    .about-me-title::after,
+    .ach-head-wrap::after {
         content: "";
         width: 97%;
         height: 8px;
@@ -72,7 +77,8 @@
     padding-top: 150px;
 }
 
-.about-me-title {
+.about-me-title,
+.ach-head-wrap {
     font-size: 48px;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -163,11 +169,42 @@
     height: 16px;
     border-radius: 50%;
 
-    transform: translate(31.5px, 8px);
+    transform: translate(32px, 8px);
     background-color: #5C010B;
 }
 
 .exp-footer {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.18rem;
+}
+
+.ach-wrapper {
+    background: url('/img/ach\ bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.ach-content-wrapper {
+    letter-spacing: 0.18rem;
+}
+
+.ach-content-1 {
+    border-left: 2px solid #5C010B;
+    border-bottom: 1px solid #5C010B;
+}
+
+.ach-content-even {
+    border-top: 1px solid #5C010B;
+    border-right: 2px solid #5C010B;
+}
+
+/* ACHIEVEMENT CONTENT */
+@media screen and (max-width: 992px) {
+    .ach-content-1,
+    .ach-content-even {
+        border-right: none;
+        border-left: none;
+    }
+
 }
