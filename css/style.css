@@ -15,7 +15,7 @@
     .about-me-title::after,
     .ach-head-wrap::after {
         content: "";
-        width: 8%;
+        width: 10%;
         height: 8px;
         margin-top: 12px;
 
@@ -199,6 +199,7 @@
     border-right: 2px solid #5C010B;
 }
 
+/* Media Queries */
 /* ACHIEVEMENT CONTENT */
 @media screen and (max-width: 992px) {
     .ach-content-1,
@@ -207,4 +208,36 @@
         border-left: none;
     }
 
+}
+
+.skill-title::after {
+    content: "";
+    width: 97%;
+    height: 8px;
+    margin-top: 12px;
+
+    background-color: #DF3143;
+}
+
+/* Media Queries */
+/* Skill Title */
+@media screen and (min-width: 992px){
+    .skill-title::after {
+        content: "";
+        width: 8%;
+        height: 8px;
+        margin-top: 12px;
+    
+        background-color: #DF3143;
+    }
+}
+
+.accordion-button {
+    color: #F0F8FF;
+    background-color: #2E4975;
+}
+
+.accordion-body {
+    background-color: #BBC8DD;
+    color: #030824;
 }
