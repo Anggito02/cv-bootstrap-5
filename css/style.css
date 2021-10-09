@@ -10,12 +10,10 @@
 
 /* Media Queries */
 /* ABOUT ME TITLE AFTER */
-/* ACHIEVEMENT AFTER */
 @media screen and (min-width: 992px) {
-    .about-me-title::after,
-    .ach-head-wrap::after {
+    .about-me-title::after {
         content: "";
-        width: 10%;
+        width: 48px;
         height: 8px;
         margin-top: 12px;
 
@@ -25,8 +23,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 992px) {
-    .about-me-title::after,
-    .ach-head-wrap::after {
+    .about-me-title::after {
         content: "";
         width: 97%;
         height: 8px;
@@ -179,7 +176,7 @@
 }
 
 .ach-wrapper {
-    background: url('/img/ach\ bg.png');
+    background: url('/img/ach-bg.png');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -217,19 +214,6 @@
     margin-top: 12px;
 
     background-color: #DF3143;
-}
-
-/* Media Queries */
-/* Skill Title */
-@media screen and (min-width: 992px){
-    .skill-title::after {
-        content: "";
-        width: 8%;
-        height: 8px;
-        margin-top: 12px;
-    
-        background-color: #DF3143;
-    }
 }
 
 .accordion-button {
