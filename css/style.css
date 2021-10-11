@@ -253,7 +253,7 @@
 }
 
 .ach-wrapper {
-    background: url('/img/ach-bg.png');
+    background-image: url('/img/ach-bg.png');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
