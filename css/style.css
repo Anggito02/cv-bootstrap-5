@@ -41,7 +41,7 @@
 
     font-family: "Montserrat", sans-serif;
 
-    background-image: url("/img/header.png");
+    background-image: url("img/header.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -253,7 +253,7 @@
 }
 
 .ach-wrapper {
-    background-image: url('/img/ach-bg.png');
+    background-image: url('img/ach-bg.png');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
