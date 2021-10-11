@@ -106,12 +106,34 @@
         rgba(46, 73, 117, 0) 99.98%, 
         rgba(46, 73, 117, 0.34375) 99.99%);
     box-shadow: inset 0 0 0 0 #BBC8DD;
-    transition: ease-out 0.4s;
+    transition: ease-in 0.4s;
 }
 
 .download-button:hover {
     color: #030824;
     box-shadow: inset 240px 0 0 0 #BBC8DD;
+}
+
+.its-button {
+    letter-spacing: 0.06;
+
+    border: none;
+    border-radius: 16px;
+
+    outline: none;
+    color: #EEE0E2;
+    background: linear-gradient(270deg,
+    #5C010B 0%, 
+    #BB0B1E 0.01%, 
+    #DB969D 72.92%, 
+    #EEE0E2 120%);
+    box-shadow: inset 0 0 0 0 #EEE0E2;
+    transition: ease-in 0.4s;
+}
+
+.its-button:hover {
+    color:#030824;
+    box-shadow: inset 240px 0 0 0 #EEE0E2;
 }
 
 .education-wrapper {
@@ -173,6 +195,61 @@
 .exp-footer {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.18rem;
+}
+
+.exp-year-wrapper {
+    width: 50%;
+}
+
+.exp-content-wrapper {
+    width: 50%;
+}
+
+.exp-year::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    transform: translate(32px, 8px);
+    background-color: #5C010B;
+}
+
+/* Media Queries Middle Line Experience */
+@media screen and (max-width: 992px) {
+    .exp-line {
+        display: none;
+    }
+
+    .exp-year {
+        width: 100%;
+    }
+
+    .exp-year::after {
+        content: "";
+        width: 32%;
+        height: 5px;
+        border-radius: 0;
+        transform: translateY(5px);
+        background-color: #5C010B;
+    }
+    .exp-year-wrapper {
+        width: 100%;
+    }
+
+    .exp-content-wrapper {
+        width: 100%;
+    }
+
+    .exp-content-text {
+        text-align: justify;
+        padding-bottom: 8px;
+        border-bottom: 2px dotted white;
+    }
+
+    .exp-footer {
+        display: none;
+    }
 }
 
 .ach-wrapper {
